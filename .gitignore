@@ -23,4 +23,27 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables
+.env
+
+# Editor/IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Vite cache
+.vite/
 *.sw?
