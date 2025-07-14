@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
-function Admin_DashBoard() {
+function AdminDashBoard() {
     const routes=[
         {
             path:'/admin-dashboard/all-users',
@@ -36,4 +36,4 @@ function Admin_DashBoard() {
   )
 }
 
-export default Admin_DashBoard 
+export default AdminDashBoard 

@@ -5,7 +5,7 @@ import Recordings from "./pages/studentPages/Recordings";
 import Cookies from "js-cookie";
 import Signin from "./pages/authpages/Signin";
 import Signup from "./pages/authpages/Signup";
-import Admin_DashBoard from "./pages/adminPages/AdminDashBoard";
+import AdminDashBoard from "./pages/adminPages/AdminDashBoard";
 import Student_dashBoard from "./pages/adminPages/Student_dashboard";
 import AllUsers from "./pages/adminPages/AllUsers";
 import AllCourses from "./pages/adminPages/AllCourses";
@@ -86,7 +86,7 @@ function App() {
             path="admin-dashboard"
             element={
               <AdminRoute>
-                <Admin_DashBoard />
+                <AdminDashBoard />
               </AdminRoute>
             }
           >
