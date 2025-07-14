@@ -13,7 +13,7 @@ function Course() {
         all_course()
     },[])
   return (
-    <div>
+    <div className='flex flex-wrap'>
         {
           course.map((x,index)=>{
             return <Card key={index} data={x}/>

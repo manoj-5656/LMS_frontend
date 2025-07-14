@@ -43,13 +43,13 @@ else{
 }
 
   return (
-    <div className="card w-[20%] m-4">
+    <div className="card w-[20%]  m-4">
   <figure>
     <img
       src={props.data.img}
       alt="Shoes" />
   </figure>
-  <div className="card-body bg-[black]">
+  <div className="card-body  bg-[black]">
     <h2 className="card-title">{props.data.course_name}</h2>
     <h2 className="card-title">{props.data.price}/- Rupees</h2>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
