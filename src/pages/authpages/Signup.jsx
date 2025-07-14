@@ -14,6 +14,7 @@ function Signup() {
   const [error,seterror]=useState("")
   const [color,setcolor]=useState("red")
   
+  
 
  async function handleSignUp(){
   const result=validation(signupData.name,signupData.email,signupData.ph_no,signupData.pwd,signupData.confirm_pwd)
@@ -186,14 +187,14 @@ function Signup() {
           </legend>
           <input
             type="password"
-            className="input text-black w-[100%]"
+            className="input text-[black] w-[100%]"
             placeholder="Type here"
             value={signupData.confirm_pwd}
             onChange={(x)=>{setsignupData({...signupData,confirm_pwd:x.target.value})}}
 
           />
         </fieldset>
-        <p className={`text-center text-[${color}]`}>{error}</p>
+        <p className={`text-[${color}]`}>{error}</p>
         <button className="btn mt-3 w-[100%] " onClick={handleSignUp}>Create Your Account</button>
         <p className="mt-2">
           Already having Account? <Link className="text-[red]" to='/signin'>Signin</Link>
