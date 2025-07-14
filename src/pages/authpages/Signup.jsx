@@ -15,6 +15,7 @@ function Signup() {
   const [color,setcolor]=useState("red")
   
   
+console.log("Backend API:", import.meta.env.VITE_BACKEND_ORIGIN);
 
  async function handleSignUp(){
   const result=validation(signupData.name,signupData.email,signupData.ph_no,signupData.pwd,signupData.confirm_pwd)
