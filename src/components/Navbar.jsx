@@ -24,6 +24,7 @@ function Navbar() {
       `${import.meta.env.VITE_BACKEND_ORIGIN}/api/auth/get-user/${id}`,
       { withCredentials: true }
     );
+    // console.log(response)
     setrole(response?.data?.data?.role);
   }
   useEffect(() => {
@@ -70,12 +71,9 @@ function Navbar() {
                   role="button"
                   className="btn btn-ghost btn-circle avatar ring-2 ring-yellow-300 hover:ring-yellow-400 transition"
                 >
-                  <div className="w-10 rounded-full">
-                    <img
-                      alt="Avatar"
-                      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..."
-                    />
-                  </div>
+                   <div className="bg-neutral text-neutral-content w-8 rounded-full">
+    <span className="text-xs">UI</span>
+  </div>
                 </div>
                 <ul
                   tabIndex={0}

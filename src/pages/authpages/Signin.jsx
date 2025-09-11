@@ -24,14 +24,15 @@ function Signin() {
           { withCredentials: true }
         );
         console.log(response);
-        if (response) {
+        if (response.status==200) {
           seterror(response?.data?.message);
           setTimeout(() => {
-            navigate("/student-dashboard");
+            navigate("/");
             window.location.reload();
           }, 3000);
         } else {
-          seterror("Signin failed");
+          seterror(response?.data?.message);
+          // seterror("Signin failed");
         }
       } catch {
         seterror("Frontend error!");
